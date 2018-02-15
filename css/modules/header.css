@@ -1,0 +1,95 @@
+header {
+    background-image: url('../../img/slide.png');
+    min-height: 500px;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+header .bottom {
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+    border: 3px solid #eeeeee;
+    -webkit-border-image: -webkit-linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
+    border-image: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
+    border-image-slice: 1;
+    background-image: url('../../img/logo.png');
+   
+}
+
+.logo:hover {
+    cursor: pointer;
+    border: 3px solid #eeeeee;
+    -webkit-border-image: -webkit-linear-gradient(135deg, var(--color1-semi) 0%, var(--color2-semi) 100%);
+    border-image: linear-gradient(135deg, var(--color1-semi) 0%, var(--color2-semi) 100%);
+    border-image-slice: 1;
+}
+
+.menu, .arrow {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #ffffff;
+    transition: all .15s ease-in-out;
+}
+
+.arrow {
+   border: none;
+}
+
+.menu i,
+.arrow i {
+    color: #ffffff;
+}
+
+.menu i {
+    font-size: 28px;
+}
+.arrow i {
+    font-size: 48px; 
+}
+
+.menu:hover{
+    cursor: pointer;
+    -webkit-border-image: -webkit-linear-gradient(135deg, var(--color3) 0%, var(--color4) 100%);
+    border-image: linear-gradient(135deg, var(--color3) 0%, var(--color4) 100%);
+    border-image-slice: 1;
+
+}
+
+.menu:hover i,
+.arrow:hover i {
+    color: transparent;
+    background-image: linear-gradient(135deg, var(--color3) 0%, var(--color4) 100%);
+    background-size: contain;
+    background-position: center center;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+}
+
+.arrow:hover i {
+    cursor: pointer;
+    background-image: linear-gradient(135deg, var(--color1-semi) 0%, var(--color2-semi) 100%);
+
+}

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1:       rgb(128, 39, 117);
+    --color2:       rgb(220, 7, 30);
+    --color1-semi:  rgb(197, 58, 183);
+    --color2-semi:  rgb(243, 34, 62);
+    --color3:       rgb(249, 220, 85);
+    --color4:       rgb(42, 201, 105);
+}
+
+html, body {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif
+}
+
+.page-wrapper {
+    max-width: 1920px;
+    min-width: 80%;
+    height: 1800px;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

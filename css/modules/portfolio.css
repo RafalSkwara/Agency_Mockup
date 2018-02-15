@@ -1,0 +1,111 @@
+section.portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.columns {
+    overflow-y: hidden;
+    display: flex;
+    margin-bottom: 10px; 
+}
+
+.column-1-5 {
+    width: 20%;
+    border: 1px solid black;
+    background-color: #000000;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column-1-5:nth-child(1),
+.column-1-5:nth-child(5) {
+    margin-top: -5%;
+}
+
+.column-1-5:nth-child(2),
+.column-1-5:nth-child(4) {
+    margin-top: -10%;
+}
+
+.column-1-5:nth-child(3) {
+    margin-top: -15%;
+}
+
+.column-1-5 .item {
+    height: 49.85%;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    overflow-y: hidden;
+    position: relative;
+}
+
+.portfolio .button {
+    height: 40px;
+    width: 45vw;
+    color: #ffffff;
+    background-image: url('../../img/button-bg.png');
+    background-size: cover;
+    background-position: 0% 0%;
+    margin: 20px auto;
+    text-transform: uppercase;
+    transition: background-position .4s ease-in-out, transform .1s ease-in-out;
+}
+    
+
+.portfolio .button:hover,
+.portfolio .button:active {
+    background-position: 75% 0%;
+    cursor: pointer;
+}
+
+.portfolio .button:active,
+.portfolio .button:active p {
+    transform: scale(0.96);
+}
+
+.item .hover-item {
+    background-image: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
+    height: 120px;
+    width: 100%;
+    padding: 16px 0;
+    position: absolute;
+    bottom: -100px;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.item:hover {
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.item:hover .hover-item {
+    bottom: 0px;
+    opacity: 1;
+}
+.hover-item h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.hover-item p {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hover-item .line {
+    background-color: #fff;
+    height: 2px;
+    width: 45%;
+}

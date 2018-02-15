@@ -1,0 +1,47 @@
+.services h2 {
+    margin-top: 60px;
+    padding: 20px 0;
+    font-size: 34px;
+}
+
+.services h3 {
+    padding: 0;
+    margin: 30px 0;;
+    font-size: 28px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service {
+    width: 32.5%;
+    height: 300px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service p {
+    color: #5b5b5b;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+.icon {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.icon-border {
+    display: block;
+    height: 2px;
+    margin-top: 15px;
+    width: 70px;
+    content: '';
+    background-color: #999;
+}
