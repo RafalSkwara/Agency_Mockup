@@ -16,7 +16,8 @@ html, body {
     color: #ffffff;
     padding: 0;
     margin: 0;
-    font-family: 'Lato', Arial, Helvetica, sans-serif
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .page-wrapper {
@@ -37,3 +38,35 @@ section {
     align-items: center;
 }
 
+.back-to-top {
+    height: 0px;
+    width: 0px;
+    display: none;
+    background-color: rgba(255,255,255,0.9);
+    color: #111;
+    font-size: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: all 0.1s cubic-bezier(0.58, 2.13, 0.58, 1), transform 0.1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.back-to-top.visible {
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+}
+.back-to-top.visible:hover {
+    background-color: rgba(255,255,255,1);
+    font-size: 44px;
+    cursor: pointer;
+}
+
+.back-to-top.visible:active {
+    transform: scale(0.98);
+} 
