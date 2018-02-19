@@ -1,9 +1,10 @@
 section.portfolio {
+    max-width: 98vw;
     display: flex;
     flex-direction: column;
     background-color: #000000;
     justify-content: space-between;
-    margin-top: 5vh;
+    margin: 5vh auto 0 auto;
 }
 
 .columns {
