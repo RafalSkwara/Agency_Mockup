@@ -70,3 +70,8 @@ section {
 .back-to-top.visible:active {
     transform: scale(0.98);
 } 
+h2 {
+    margin-top: 60px;
+    padding: 20px 0 20px 20px;
+    font-size: 34px;
+}

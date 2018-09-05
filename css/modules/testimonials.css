@@ -1,0 +1,33 @@
+.testimonials {
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding-bottom: 40px;
+}
+
+.testimonials button {
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	color: #fff;
+	z-index: 100;
+	border: none;
+	outline: none;
+	font-size: 34px;
+}
+
+.testimonials button:hover {
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.carousel {
+	flex: 1;
+	overflow: hidden;
+}
+
+.carousel-cell {
+	width: 50%;
+	margin-right: 0;
+}

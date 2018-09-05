@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
         this.ARROW = document.querySelector('.arrow');
         this.HEADER = document.querySelector('header');
         this.SECTION_SERVICES = document.querySelector('section.services');
-        this.TO_TOP = document.querySelector('.back-to-top');
+		this.TO_TOP = document.querySelector('.back-to-top');
+		
+		this.CAROUSEL = document.querySelector('.carousel');
+		this.CAROUSEL_PREV = document.querySelector('#prev');
+		this.CAROUSEL_NEXT = document.querySelector('#next');
     }
 
     let Controller = function(model, view) {
@@ -44,7 +48,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         view.ARROW.addEventListener('click', this.arrowHandler);
         window.addEventListener('scroll', this.scrollHandler);
-        view.TO_TOP.addEventListener('click', this.moveToTop);
+		view.TO_TOP.addEventListener('click', this.moveToTop);
+
+		
+		//libraries initialisation
+		let flkty = new Flickity(view.CAROUSEL, {
+			cellAlign: 'left',
+			draggable: true,
+			contain: true,
+			wrapAround: true,
+			prevNextButtons: false,
+			pageDots: false
+		});
+
+		view.CAROUSEL_PREV.addEventListener("click", () => flkty.previous(true));
+		view.CAROUSEL_NEXT.addEventListener("click", () => flkty.next(true));
     }
 
     let model = new Model();

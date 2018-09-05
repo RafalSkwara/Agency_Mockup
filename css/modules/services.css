@@ -45,3 +45,16 @@
     content: '';
     background-color: #999;
 }
+
+@media all and (max-width: 720px) {
+	.service {
+		width: 48.5%;
+		padding-left: 10px;
+	}
+}
+@media all and (max-width: 500px) {
+	.service {
+		width: 100%;
+		padding-left: 10px;
+	}
+}
