@@ -11,19 +11,20 @@
     --color4:       rgb(42, 201, 105);
 }
 
+html, body, button, textarea, input {
+	font-family: 'Muli', Arial, Helvetica, sans-serif;
+}
 html, body {
     background-color: #000000;
     color: #ffffff;
     padding: 0;
     margin: 0;
-    font-family: 'Muli', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 
 .page-wrapper {
     max-width: 1920px;
     min-width: 80%;
-    height: 1800px;
     margin: 0 auto;
 }
 
@@ -53,25 +54,42 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+
+h2 {
+	margin-top: 60px;
+	padding: 20px 0 20px 20px;
+	font-size: 34px;
+}
+
+/* - - - Back to top button - - - */
+.back-to-top i {
+	transform: translateY(-3px);
+	opacity: 1;
 }
 
 .back-to-top.visible {
-    height: 50px;
+	height: 50px;
     width: 50px;
-    opacity: 1;
+	opacity: 1;
+	animation: arrow-up .4s cubic-bezier(.18, .89, .32, 1.28) backwards;
 }
 .back-to-top.visible:hover {
-    background-color: rgba(255,255,255,1);
+    background: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
     font-size: 44px;
-    cursor: pointer;
+	cursor: pointer;
 }
 
-.back-to-top.visible:active {
-    transform: scale(0.98);
+.back-to-top.visible:hover i {
+	animation: arrow-up .5s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
+}
+
+.back-to-top.visible:active i {
+	transform: translateY(-3px);
 } 
-h2 {
-    margin-top: 60px;
-    padding: 20px 0 20px 20px;
-    font-size: 34px;
+
+.back-to-top.visible:active {
+	transform: scale(0.98);
 }
