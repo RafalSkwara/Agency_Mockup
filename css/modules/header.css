@@ -106,9 +106,7 @@ header .bottom {
     -ms-background-clip: text;
     background-clip: text;
 }
-.menu-toggle--main {
-	z-index: 10000;
-}
+
 .menu-toggle--main {
 	opacity: 0;
 	transition: opacity .3s ease-in-out;
@@ -116,6 +114,7 @@ header .bottom {
 
 .menu-toggle--main.visible {
 	opacity: 1;
+	background-color: rgba(128, 39, 118, 0.39);
 }
 
 .arrow:hover {
@@ -171,6 +170,11 @@ header .bottom {
 }
 
 @media all and (max-width: 500px) {
+	header {
+		max-height: 600px;
+		background-size: auto 600px;
+		background-repeat: no-repeat;
+	}
 	header .logo {
 		opacity: 0;
 	}

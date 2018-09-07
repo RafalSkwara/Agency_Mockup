@@ -3,7 +3,7 @@
 }
 
 :root {
-    --color1:       #802775;
+    --color1:       rgb(128, 39, 118);
     --color2:       rgb(220, 7, 30);
     --color1-semi:  rgb(197, 58, 183);
     --color2-semi:  rgb(243, 34, 62);
@@ -19,7 +19,8 @@ html, body {
     color: #ffffff;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	font-size: 16px;
 }
 
 .page-wrapper {
@@ -63,6 +64,15 @@ h2, section h2 {
 	margin-top: 60px;
 	padding: 20px 0 20px 20px;
 	font-size: 34px;
+	letter-spacing: 0.1rem;
+}
+
+h3, section h3 {
+	letter-spacing: .1rem;
+}
+
+p {
+	letter-spacing: 0.05rem;
 }
 
 /* - - - Back to top button - - - */
