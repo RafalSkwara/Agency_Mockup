@@ -130,7 +130,7 @@ section.contact-and-socials {
 }
 .contact__column input[type="submit"]:hover {
 	cursor: pointer;
-	background-position: 75% 0;
+	background-position: 55% 0;
 }
 
 footer {
@@ -141,4 +141,37 @@ footer {
 
 footer a {
 	color: #fff
+}
+
+@media all and (max-width: 1200px) {
+	section.contact-and-socials {
+		padding: 40px 15px;
+	}
+}
+@media all and (max-width: 1000px) {
+	.contact__part.part-2 {
+		width: 35%;
+	}
+	.contact__part.part-3 {
+		width: 65%;
+	}
+
+	.contact {
+		flex-direction: column;
+	}
+	.contact__column {
+		width: 100%;
+	}
+
+	.contact__column form {
+		padding-left: 0;
+	}
+}
+
+@media all and (max-width: 500px) {
+	
+	.contact__part.part-2,
+	.contact__part.part-3 {
+		width: 100%;
+	}
 }

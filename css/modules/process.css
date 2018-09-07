@@ -12,7 +12,6 @@ section.process .column-1-3 {
 }
 
 section.process h2 {
-    padding: 20px 0;
     font-size: 34px;
 }
 
@@ -51,10 +50,9 @@ section.process .line-2 {
     margin: 0;
 }
 
+
 @media all and (max-width: 720px) {
-	section.process h2 {
-		padding: 20px 20px;
-	}
+
 	section.process .column-1-3 {
 		width: 100%;
 		padding-left: 10%;

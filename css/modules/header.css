@@ -6,9 +6,7 @@ header {
     background-size: cover;
     background-position: center center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
 header .top {
@@ -18,7 +16,8 @@ header .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2vw;
+	padding: 0 2vw;
+	z-index: 10;
 }
 
 header .bottom {
@@ -35,7 +34,7 @@ header .bottom {
     border-image: linear-gradient(135deg, var(--color1) 0%, var(--color2) 100%);
     border-image-slice: 1;
     background-image: url('../../img/logo.png');
-   
+   	z-index: 10000;
 }
 
 .logo-mobile {
@@ -107,7 +106,9 @@ header .bottom {
     -ms-background-clip: text;
     background-clip: text;
 }
-
+.menu-toggle--main {
+	z-index: 10000;
+}
 .menu-toggle--main {
 	opacity: 0;
 	transition: opacity .3s ease-in-out;
@@ -163,6 +164,10 @@ header .bottom {
 
 .menu__item:hover {
 	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.circles-wrp {
+	transform: rotate(180deg);
 }
 
 @media all and (max-width: 500px) {
